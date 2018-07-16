@@ -24,7 +24,9 @@ private Border borderCol;
     public CircularImageView(Context ctx, AttributeSet attrs) {
         super(ctx, attrs);
         try{
-            border = attrs.getAttributeFloatValue("http://schemas.android.com/apk/res-auto", "borderWidth",10f);
+
+            TypedArray a = ctx.obtainStyledAttributes(attrs, R.styleable.CircularImageView);
+            border = a.getDimension(R.styleable.CircularImageView_borderWidth , 10);
             @ColorInt int borderColor =  attrs.getAttributeIntValue("http://schemas.android.com/apk/res-auto", "borderColor",Color.WHITE);
             setBorderColor(borderColor);
         }finally {

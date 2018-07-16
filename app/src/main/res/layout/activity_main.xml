@@ -13,7 +13,7 @@
         android:src="@drawable/test_image"
         android:scaleType="centerCrop"
         android:layout_centerHorizontal="true"
-        app:borderWidth="0"
+        app:borderWidth="2dp"
         android:elevation="8dp"
         />
 
@@ -31,7 +31,7 @@
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         app:borderColor="#b15ee4"
-        app:borderWidth="50"/>
+        app:borderWidth="50dp"/>
 
 
 </RelativeLayout>
