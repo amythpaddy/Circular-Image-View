@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityMain"
+    android:background="#7894">
+
+    <com.caragiz_studioz.library.circularimageview.CircularImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/test_image"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        app:borderWidth="0"
+        android:elevation="8dp"
+        />
+
+    <com.caragiz_studioz.library.circularimageview.CircularImageView
+        android:id="@+id/test_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@color/colorPrimary"
+        android:layout_centerInParent="true"/>
+
+    <com.caragiz_studioz.library.circularimageview.CircularImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        app:borderColor="#b15ee4"
+        app:borderWidth="50"/>
+
+
+</RelativeLayout>
